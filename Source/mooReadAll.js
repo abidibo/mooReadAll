@@ -4,7 +4,7 @@ description: mooReadAll is a plugin designed to cut html string preserving the h
 
 license: MIT-style
 
-author:
+authors:
 - abidibo (Otto srl) <abidibo@gmail.com>
 
 requires:
@@ -23,6 +23,8 @@ requires:
 
 provides:
 - mooReadAll
+
+...
 
 For documentation, demo and download link please visit http://www.abidibo.net/projects/js/mooReadAll
 

@@ -1,7 +1,7 @@
 mooReadAll
 ===========
 
-![Screenshot](http://github.com/abidibo/mooReadAll/blob/master/logo.jpg)
+![Screenshot](http://github.com/abidibo/mooReadAll/raw/master/logo.jpg)
 
 mooReadAll is a mootools plugin designed to truncate html contents **preserving the right html structure** and without truncate tags.   
 mooReadAll takes the dom elements passed, parses their content cutting it to a user defined number of words. Tag structure is preserved by **all or some tags may also be removed**. Then it includes a "read all" link linking the whole content. The action to perform when clicking it is highly customizable: inplace, link, js callback and layer action types are provided, see documentation for more informations. In case of layer type a title may be provided using the html5 data- attributes, and the layer showing up (lightbox style) may be made draggable, resizable and text-resizable.
@@ -19,9 +19,11 @@ mooReadAll requires
 	<script src="path-to-mooReadAll-js" type="text/javascript"></script>
 
 **Include mooReadAll stylesheet**
+
 	<link href="path-to-mooReadAll-css" type="text/css" rel="stylesheet" />
 
-**Upload mooReadAll images**
+**Upload mooReadAll images**   
+
 Upload mooReadAll images to a desired path and if necessary change relative paths in mooReadAll.css
 
 **Example code**
@@ -49,8 +51,8 @@ For more demos please visit the mooReadAll demo page at http://www.abidibo.net/p
 Screenshots
 -----------
 
-![Screenshot](http://github.com/abidibo/mooReadAll/blob/master/Docs/mra_screenshot1.jpg)
-![Screenshot](http://github.com/abidibo/mooReadAll/blob/master/Docs/mra_screenshot2.jpg)
+![Screenshot](http://github.com/abidibo/mooReadAll/raw/master/Docs/mra_screenshot1.png)
+![Screenshot](http://github.com/abidibo/mooReadAll/raw/master/Docs/mra_screenshot2.png)
 
 Links
 -----------------

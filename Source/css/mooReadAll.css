@@ -1,0 +1,66 @@
+.mra_overlay {
+	background-color: #000;
+}
+.mra_layer {
+	background-color: #eee;
+	border: 3px solid #000;
+	overflow:auto;
+}
+.mra_title {
+    	font-size: 1.2em;
+	font-weight: bold;
+	margin: 10px;
+}
+.mra_layer_body {
+    	clear: left;
+	margin: 35px 10px 10px 10px;
+}
+.mra_close {
+	background: #000 url('../img/mra_close.png') no-repeat center center;
+	width: 30px;
+	height:30px;
+	float:right;
+	right: 0px;
+	top: 2px;
+	cursor:pointer;
+}
+
+.mra_drag {
+	background: #000 url('../img/mra_move.png') no-repeat center center;
+	width: 30px;
+	height:30px;
+	float:right;
+	right: 30px;
+	top: 2px;
+	cursor:move;
+}
+
+.mra_resize {
+	background: url('../img/mra_resize.png') no-repeat center center;
+	width: 30px;
+	height:30px;
+	position:absolute;
+	right: 0px;
+	bottom: 0px;
+	cursor:se-resize;
+}
+
+.mra_text_bigger {
+	background: #000 url('../img/mra_text_more.png') no-repeat center center;
+	width: 30px;
+	height:30px;
+	float:right;
+	right: 60px;
+	top: 2px;
+	cursor:pointer;
+}
+
+.mra_text_smaller {
+	background: #000 url('../img/mra_text_less.png') no-repeat center center;
+	width: 30px;
+	height:30px;
+	float:right;
+	right: 90px;
+	top: 2px;
+	cursor:pointer;
+}

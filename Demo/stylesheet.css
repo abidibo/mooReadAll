@@ -1,0 +1,23 @@
+.left {
+	float:left;
+}
+.right {
+	float: right;
+}
+.clear {
+    clear: both;
+}
+.box {
+	border: 1px solid #ccc;
+	background: #eee;
+	padding: 10px;
+	margin: 5px;
+}
+.link {
+	cursor:pointer;
+	text-decoration:underline;
+	color: #0000ff;
+}
+.link:hover {
+    text-decoration: none;
+}

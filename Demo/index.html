@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>MooRadAll test-page</title>
+		<script type="text/javascript" src="mootools-1.3.2.js"></script>
+		<script type="text/javascript" src="../Source/mooReadAll.js"></script>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<link type="text/css" rel="stylesheet" href="../Source/css/mooReadAll.css" />
+	</head>
+	<body>
+		<h1>mooReadAll demo</h1>
+		<p>Please for full demos visit <a href="http://www.abidibo.net/projects/js/mooReadAll/demo">http://www.abidibo.net/projects/js/mooReadAll/demo</a></p>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non dapibus quam. Nam eu eros id metus ornare consectetur. Mauris et sem sed turpis tempor malesuada ultricies in turpis. Duis rhoncus volutpat lobortis. Donec enim est, sollicitudin placerat ultricies vel, consectetur ac ipsum. Praesent eros est, consectetur quis tempus vitae, gravida ut eros. 
+		</div>
+		<div data-title="title" class="left box" id="readall1" style="width:46%;">
+		    Some text without tags. Here we remove img and b tags. <p style="margin: 2px;">Lorem ipsum <b class="myclass">dolor</b> sit amet, <i>consectetur adipiscing elit.</i> <img src="../Source/img/mra_close.png" />Phasellus non dapibus quam. Nam eu eros id <span style="color: #ffff00">metus ornare consectetur</span>. Mauris et sem sed turpis tempor malesuada ultricies in turpis. </p><p>Duis rhoncus volutpat lobortis. <s>Donec enim est</s>, sollicitudin placerat ultricies vel, consectetur ac ipsum.<br/>Praesent eros est, consectetur quis tempus vitae, gravida ut eros. Vivamus suscipit magna massa, nec lacinia ante. Donec id arcu metus, in egestas erat.</p><p>Donec id diam sed eros dictum varius <a href="index.html" class="link">in quis nisl</a>. <br />In eget adipiscing neque. Sed mollis vulputate ornare. Morbi sed ultricies mauris. Sed euismod cursus nisl, sed congue diam pellentesque sed. Suspendisse porta nibh ac leo facilisis posuere. Aliquam erat volutpat. Fusce vehicula nunc mi, nec mattis mauris. Sed posuere ligula facilisis ligula rutrum vitae sodales metus fermentum. Nulla vitae risus vitae tellus sodales sagittis.</p>
+		</div>
+		<div class="right box" id="readall2" style="width:46%">
+		    Some text without tags. <p style="margin: 2px;">Lorem ipsum <b class="myclass">dolor</b> sit amet, <i>consectetur adipiscing elit.</i> <img src="../Source/img/mra_text_more.png" />Ciucciaris cazzularis. </p><p>Duis rhoncus volutpat lobortis. <s>Donec enim est</s>, sollicitudin placerat ultricies vel, consectetur ac ipsum.<br/>Praesent eros est, consectetur quis tempus vitae, gravida ut eros. Vivamus suscipit magna massa, nec lacinia ante. Donec id arcu metus, in egestas erat.</p><p>Donec id diam sed eros dictum varius <a href="index.html" class="link">in quis nisl</a>. <br />In eget adipiscing neque. Sed mollis vulputate ornare. Morbi sed ultricies mauris. Sed euismod cursus nisl, sed congue diam pellentesque sed. Suspendisse porta nibh ac leo facilisis posuere. Aliquam erat volutpat. Fusce vehicula nunc mi, nec mattis mauris. Sed posuere ligula facilisis ligula rutrum vitae sodales metus fermentum. Nulla vitae risus vitae tellus sodales sagittis.</p>
+		</div>
+		<div class="clear"></div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non dapibus quam. Nam eu eros id metus ornare consectetur. Mauris et sem sed turpis tempor malesuada ultricies in turpis. Duis rhoncus volutpat lobortis. Donec enim est, sollicitudin placerat ultricies vel, consectetur ac ipsum. Praesent eros est, consectetur quis tempus vitae, gravida ut eros. Vivamus suscipit magna massa, nec lacinia ante. Donec id arcu metus, in egestas erat. Donec id diam sed eros dictum varius in quis nisl. In eget adipiscing neque.
+		</div>
+
+		<script>
+			var moo_read_all = new mooReadAll(); 
+			moo_read_all.add('#readall1', {
+				remove_tags: ['img', 'b'],
+				layer_draggable: true,
+				layer_resizable: true,
+				layer_text_resizable: true
+			});
+			moo_read_all.add('#readall2', {
+				action: 'inplace'
+			});
+		</script>
+	</body>
+</html>

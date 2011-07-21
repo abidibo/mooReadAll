@@ -4,7 +4,7 @@ mooReadAll
 ![Screenshot](http://github.com/abidibo/mooReadAll/raw/master/logo.jpg)
 
 mooReadAll is a mootools plugin designed to truncate html contents **preserving the right html structure** and without truncate tags.   
-mooReadAll takes the dom elements passed, parses their content cutting it to a user defined number of words. Tag structure is preserved by **all or some tags may also be removed**. Then it includes a "read all" link linking the whole content. The action to perform when clicking it is highly customizable: inplace, link, js callback and layer action types are provided, see documentation for more informations. In case of layer type a title may be provided using the html5 data- attributes, and the layer showing up (lightbox style) may be made draggable, resizable and text-resizable.
+mooReadAll takes the dom elements passed, parses their content cutting it to a user defined number of words. The tag structure is preserved, and the tags left opened by the cut are automatically closed. As an option **all or some tags may also be removed** (i.e. remove images from content summary). Then it includes a "read all" link to show the whole content (in different and custom manners). The action to perform when clicking it is highly customizable: inplace, link, js callback and layer action types are provided, see documentation for more informations. In case of layer type a title may be provided using the html5 data- attributes, and the layer showing up (lightbox style) may be made draggable, resizable and text-resizable.
 
 How to use
 ----------

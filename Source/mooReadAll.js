@@ -9,16 +9,16 @@ authors:
 
 requires:
 - core/1.3: Core
-- core/1-3: Array
-- core/1-3: String
-- core/1-3: Function 
-- core/1-3: Event
-- core/1-3: Class
-- core/1-3: Element
-- core/1-3: Element.Style
-- core/1-3: Element.Event
-- core/1-3: Element.Dimensions
-- core/1-3: Fx.Tween 
+- core/1.3: Array
+- core/1.3: String
+- core/1.3: Function 
+- core/1.3: Event
+- core/1.3: Class
+- core/1.3: Element
+- core/1.3: Element.Style
+- core/1.3: Element.Event
+- core/1.3: Element.Dimensions
+- core/1.3: Fx.Tween 
 - more/1.3: Drag
 
 provides:
@@ -375,7 +375,7 @@ var mooReadAll = new Class({
 	}.protect(),
 	closeLayer: function() {
 		this.layer.destroy();
-    		this.overlay_anim.start(0.7, 0);		
+    		this.overlay_anim.start(0.7, 0).chain(function() { this.overlay.dispose(); }.bind(this));		
 		this.enableObjects();
 	},
 	makeDraggable: function() {

@@ -175,9 +175,9 @@ var mooReadAll = new Class({
 	}.protect(),
 	cut: function(html, prop) {
 		// open close tags like <br /> are changed by javascript innerHTML function to <br>
-		var rexp_open_tag = "<([a-zA-Z]+)\s?[^>]*?>";	       
-		var rexp_close_tag = "<\/([a-zA-Z]+)>";
-		var rexp_tag = "<\/?[a-zA-Z]+\s?[^>]*?\/?>";	       
+		var rexp_open_tag = "<([a-zA-Z][a-zA-Z123456]*)\s?[^>]*?>";	       
+		var rexp_close_tag = "<\/([a-zA-Z][a-zA-Z123456]*)>";
+		var rexp_tag = "<\/?[a-zA-Z][a-zA-Z123456]*\s?[^>]*?\/?>";	       
 		var ot_regexp = new RegExp(rexp_open_tag);
 		var ct_regexp = new RegExp(rexp_close_tag);
 
